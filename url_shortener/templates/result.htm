@@ -9,7 +9,8 @@
 </head>
 <body>
     <main>
-        <form action="short">
+        <form action="short" method="post">
+            {% csrf_token %}
             <h1>URL Shortener</h1>
             <input name="long_url" type="text" placeholder="Enter URL to shorten">
             <div class="buttons">
