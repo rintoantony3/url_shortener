@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+</head>
+<body>
+    <main>
+    <form action="short">
+        <h1>URL Shortener</h1>
+        <input name="long_url" type="text" placeholder="Enter URL to shorten">
+        <div class="buttons">
+          <input type="submit" text="Shorten"/>
+        </div>
+    </form>
+    </main>
+</body>
+</html>
